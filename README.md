@@ -39,12 +39,12 @@ Surface plane
 https://www.andc.tv 
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
-<img src="images/homepagina.png" width="375px" alt="Homepagina van website &C">
+Homepagina van &C  
+<img src="images/homepagina.png" width="375px" alt="Homepagina van de website &C">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/artikel.png" width="375px" alt="Detailpagina van &C">
+Artikel van &C  
+<img src="images/artikel.png" width="375px" alt="Artikel over sneller in slaap vallen van &C">
  
 </details>
 
