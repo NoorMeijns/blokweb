@@ -32,7 +32,7 @@ Surface plane
 
 ## Je website
 
-<details>
+<details open>
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
