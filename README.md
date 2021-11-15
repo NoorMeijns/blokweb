@@ -40,11 +40,11 @@ https://www.andc.tv
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="Homepagina van website &C">
+<img src="images/homepagina.png" width="375px" alt="Homepagina van website &C">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="Detailpagina van &C">
+<img src="images/artikel.png" width="375px" alt="Detailpagina van &C">
  
 </details>
 
