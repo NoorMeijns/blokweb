@@ -79,11 +79,11 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| Cera           | Edward             | Noor         | Xavier           |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | Hoe je iconen moet toevoegen    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Cera                          | Edward             | Noor         | Xavier           |
+| ---                           | ---                | ---          | ---              |
+| Hoe je een hamburgermenu maakt  | Wilt weten hoe je een carrousel moet maken            | Hoe je een foto carrousel maakt    | Hoe je iconen moet toevoegen    |
+| Hoe iconen toevoegen              | dit als er tijd is | nog een punt | Wilt ook weten hoe je een hamburger menu maakt |
+| ...                            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
