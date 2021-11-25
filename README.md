@@ -59,7 +59,7 @@ Artikel van &C
 <img src="images/&c html elementen.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/detailNav.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/detailNav.png" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
