@@ -82,8 +82,8 @@ samen met je groepje opstellen
 | Cera                          | Edward             | Noor         | Xavier           |
 | ---                           | ---                | ---          | ---              |
 | Hoe je een hamburgermenu maakt  | Wilt weten hoe je een carrousel moet maken            | Hoe je een foto carrousel maakt    | Hoe je iconen moet toevoegen    |
-| Hoe iconen toevoegen              | dit als er tijd is | nog een punt | Wilt ook weten hoe je een hamburger menu maakt |
-| ...                            | ...                | ...          | ...              |
+| Hoe iconen toevoegen              |  |  | Wilt ook weten hoe je een hamburger menu maakt |
+
 
 
 ### Verslag van meeting
