@@ -1,5 +1,203 @@
-/* CSS Document */
+/*********************/
+/*    #CSS REMEDY    */
+/*********************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+
+
+
+
+
+/***********************/
+/*  #CUSTOMPROPERTIES  */
+/***********************/
+:root {
+    --main-color:#FAFAFA;
+    --background-color:#F2F2F2;
+    --background-highlight-color:#FBF9F9;
+    --white-space:5vw;
+}
+
+
+
+
+
+
+/*********************/
+/*  #ALGEMENE STIJL  */
+/*********************/
+body {
+    background-color: var(--main-color);
+}
+
+h2 {
+    background-color: var(--background-color);
+    margin: 20px;
+}
+
+
+
+
+
+
+/*********************/
+/*    #NAVIGATIE     */
+/*********************/
+header {
+    background-color: black;
+    flex-wrap:wrap;
+}
+
+header h1 {
+    display: none;
+}
+
+header img {
+    width: 30px;
+    margin: 12px 15px 10px;
+}
+
+nav ul {
+    display: flex;
+    overflow-x: auto;
+    background-color:#F2F2F2;
+
+    scroll-snap-type: x mandatory;
+    overscroll-behavior:none;
+}
+
+nav ul li {
+    flex-basis:9em;
+    flex-shrink:0;
+    display:flex;
+    scroll-snap-align: center;
+    overscroll-behavior: contain;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: arial;
+    font-weight: 400;
+    font-size: 13px; 
+    padding: 15px 0px;
+}
+
+
+
+
+
+/*********************/
+/*    #CARROUSEL     */
+/*********************/
+main section a {
+    background-color: var(--background-highlight-color);
+    max-height: 20.625em;
+}
+
+/* zorgt ervoor dat de tekst in de carroussel er niet uitzien als linkjes. Alles staat namelijk in een a */ 
+/* De > teken wordt gebruikt om alle a's in de section te selecteren, maar niet de a's die misschine in de kinderen van de section zitten */
+section > a {
+    text-decoration: none;
+}
+
+section:first-of-type {
+    background-color: pink;
+}
+
+section:first-of-type a {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    background-color: red;
+    width: 13.75em;
+    box-shadow: 2px 2px 15px grey;
+    
+}
+
+section:first-of-type a:nth-of-type(1) {
+    z-index: 1;
+}
+
+section:first-of-type a:nth-of-type(2) {
+    background-color: yellow;
+}
+
+section:first-of-type a:nth-of-type(3) {
+    background-color: green;
+}
+
+section:first-of-type a h2, section:first-of-type a h3 {
+    display: flex;
+    color: blue;
+    text-align: center;
+    flex-direction: column;
+}
+
+section:first-of-type h2 {
+    font-size: 1.5em;
+}
+
+section:first-of-type time {
+    position: absolute;
+    color: white;
+    background-color: black;
+    font-weight: 800;
+    font-size: .9em;
+    padding: .8em;
+    top: .5em;
+    right: 0; 
+}
+
+section:first-of-type img {
+    max-width: 100%;
+    width: 13.75em;
+    height: 13.75em;  
+}
+
+
+
+
+/**********************/
+/*  #NIEUW-ARTIKELEN  */
+/**********************/
+
+/* selecteert alle h2's in een section behalve degene uit de eerste section  */
+h2:not(section:first-of-type h2) {
+    background-color: grey;
+    margin: .125em 0;
+    padding: .5em;
+    font-size: 1.75em;
+}
+
+section:nth-of-type(2) a {
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    background-color: lightpink;
+
+}
+
+section:not(section:first-of-type) img {
+    width: 5.68em;
+}
+
+section:nth-of-type(2) div {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+}
+
+section:nth-of-type(2) a h3 {
+  font-size: 1.2em;  
+}
+
+section:nth-of-type(2) a h4 {
+    font-size: 0.9em;
+    width: 20em;
+  }
+  
