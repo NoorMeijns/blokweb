@@ -130,10 +130,10 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- We hebben het gehad over hoe je darkmode moet toevoegen.
+- Daarnaast heb ik mijn vragen kunnen stellen. Ik heb daarom de alts in alle <a> weggehaald.
+- Ook heb ik mijn h1 verandert. Ik heb daar nu mijn logo in staan i.p.v. de h1 verborgen te maken met CSS.
+- Ik moet nu alleen het logo in een <a> zetten op een detailpagina. Dan kan je terug naar de homepagina als je erop klikt.
 
 </details>
 
