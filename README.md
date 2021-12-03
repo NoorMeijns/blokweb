@@ -109,12 +109,13 @@ hier dit ging goed & dit was lastig
 
 <img src="images/website.png" height="375px" alt="Mijn website artikelen gedeelte">
 
- Tijdens het maken van de website ging het navigatie menu erg goed en de plaatsing van de foto's in de carrousel. 
+ Tijdens het maken van de website ging het navigatie menu erg goed en de plaatsing van de foto's in de carrousel. Ik ben nu nog bezig met het gedeelte "Abonnee worden?" en ik moet de link nog vormgeven met CSS. Die zien er namelijk anders uit op de website van &C. 
+ 
  
 <img src="images/website 1.png" height="375px" alt="Mijn website header">
  
  Wat ik lastiger vind is hoe ik de carrousel moet maken, maar ik ben nu bezig om eerst de hele webpagina neer te zetten. Dan kan ik later kijken naar de carrousel. 
- Voor de rest ging alles goed. 
+ Voor de rest ging alles goed. De homepagina is al bijna klaar. Ik moet alleen nog wat artikelen toevoegen de abonnee worden section vormgeven, daarna wil ik de carrousel werkend maken.
 
 ### Agenda voor meeting
 samen met je groepje opstellen
