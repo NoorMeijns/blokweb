@@ -123,8 +123,8 @@ samen met je groepje opstellen
 | Noor     | Cera         | Edward    | Xavier       |
 | ---            | ---                | ---          | ---              |
 | Vragen of h1 onzichtbaar maken goed is  | Hoe maak je een scrollbar om tussen foto's te scrollen. | Hoe maak je een darkmode toglle?  | Hoe kan ik in mijn footer 2 kleuren toevoegen?   |
-| en dat ook nog | Vraag over een plaatje in haar website | nog een punt | dit wil ik zeker |
-| Mag je alt gebruiken in <a>?            | ...                | ...          | ...              |
+| Mag je alt gebruiken in <a>?  | Vraag over een plaatje in haar website | | |
+
 
 
 ### Verslag van meeting
