@@ -107,8 +107,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-<img src="images/homepagina.png" width="375px" alt="Homepagina van de website &C">
-<img src="images/homepagina.png" width="375px" alt="Homepagina van de website &C">
+<img src="images/website.png" width="375px" alt="Homepagina van de website &C">
+<img src="images/website 1.png" width="375px" alt="Homepagina van de website &C">
 
 
 ### Agenda voor meeting
