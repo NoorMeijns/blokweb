@@ -89,10 +89,9 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- We hebben het gehad over hoe je een hamburgermenu kan maken
+- Ik heb als tip gekregen om eerst ervoor te zorgen dat mijn webpagina het doet en om daarna pas te gaan kijken hoe je de carroussel maakt.
+- In mijn html moest ik alleen nog één aanpassing maken. Ik heb mijn h2'tjes en h3'tjes in de section gezet. 
 
 </details>
 
@@ -107,6 +106,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+<img src="images/homepagina.png" width="375px" alt="Homepagina van de website &C">
+<img src="images/homepagina.png" width="375px" alt="Homepagina van de website &C">
 
 
 ### Agenda voor meeting
