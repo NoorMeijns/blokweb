@@ -17,9 +17,9 @@
 /***********************/
 :root {
     --main-color:#FAFAFA;
-    --background-color:#F2F2F2;
-    --background-highlight-color:#FBF9F9;
-    --white-space:5vw;
+    --background-highlight-color:rgb(244, 244, 244);
+    --main-carrousel-color: rgb(255, 210, 217);
+    --second-carrousel-color: #f7f89b;
 }
 
 
@@ -34,11 +34,10 @@ body {
     background-color: var(--main-color);
 }
 
-h2 {
-    background-color: var(--background-color);
-    margin: 20px;
+h2, h3, h4 {
+    font-family: outfit;
+    color: black;
 }
-
 
 
 
@@ -57,23 +56,25 @@ header h1 {
 }
 
 header img {
-    width: 30px;
-    margin: 12px 15px 10px;
+    width: 2em;
+    margin: 1em 1em 0.9em;
 }
 
 nav ul {
     display: flex;
     overflow-x: auto;
-    background-color:#F2F2F2;
+    background-color:var(--background-highlight-color);
 
     scroll-snap-type: x mandatory;
     overscroll-behavior:none;
+    padding: 1em 5em;
 }
 
 nav ul li {
-    flex-basis:9em;
-    flex-shrink:0;
     display:flex;
+    flex-direction: column-reverse;
+    flex-basis:9em;
+    flex-shrink: 0;
     scroll-snap-align: center;
     overscroll-behavior: contain;
 }
@@ -83,9 +84,10 @@ nav ul li a {
     color: black;
     font-family: arial;
     font-weight: 400;
-    font-size: 13px; 
-    padding: 15px 0px;
+    font-size: 0.8em; 
+    
 }
+
 
 
 
@@ -106,98 +108,173 @@ section > a {
 }
 
 section:first-of-type {
-    background-color: pink;
+    display: flex;
+    height: 28em;
 }
 
 section:first-of-type a {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;    
     position: relative;
-    background-color: red;
-    width: 13.75em;
     box-shadow: 2px 2px 15px grey;
-    
+    min-width: 13.75em;
+    min-height: 20.625em ;
+    max-height: 20.625em;
 }
 
 section:first-of-type a:nth-of-type(1) {
     z-index: 1;
+    left: calc(50% - 6.875em);
+    top: 2.5em;
+    background-color: var(--main-carrousel-color);
 }
 
+
 section:first-of-type a:nth-of-type(2) {
-    background-color: yellow;
+    background-color: var(--second-carrousel-color);
+    min-width: 11.625em;
+    max-height: 11.625em;
+    left: -70%;
+    top: 4em;
 }
 
 section:first-of-type a:nth-of-type(3) {
-    background-color: green;
+    background-color: var(--second-carrousel-color);
+    min-width: 11.625em;
+    max-height: 11.625em;
+    left: -60%;
+    top: 4em;
 }
+
+section:first-of-type a:nth-of-type(1) h2 {
+    background-color: inherit;
+    font-weight: 500;
+}
+
+
+/* Kijk hier nog eens naar! */
+section:first-of-type a h2 {
+    background-color: inherit;
+}
+
+
+
 
 section:first-of-type a h2, section:first-of-type a h3 {
     display: flex;
-    color: blue;
+    color: black;
     text-align: center;
     flex-direction: column;
+    margin: 0;
 }
 
 section:first-of-type h2 {
-    font-size: 1.5em;
+    font-size: .9em;
+    padding: 0.5em;
+}
+
+section:first-of-type h3 {
+    font-size: 1em;
+    padding: 0.5em;
 }
 
 section:first-of-type time {
     position: absolute;
-    color: white;
+    color: var(--main-color);
     background-color: black;
-    font-weight: 800;
+    font-weight: 500;
     font-size: .9em;
-    padding: .8em;
-    top: .5em;
+    padding: .5em 1.2em;
+    top: .8em;
     right: 0; 
+    font-family: Outfit;
+    text-transform: lowercase;
 }
 
 section:first-of-type img {
     max-width: 100%;
     width: 13.75em;
-    height: 13.75em;  
+    height: 13.75em;
+    order: -1;
 }
 
 
 
 
 /**********************/
-/*  #NIEUW-ARTIKELEN  */
+/*   #artikellijst    */
 /**********************/
 
 /* selecteert alle h2's in een section behalve degene uit de eerste section  */
 h2:not(section:first-of-type h2) {
-    background-color: grey;
+    background-color:rgba(236,236,236);
     margin: .125em 0;
     padding: .5em;
     font-size: 1.75em;
 }
 
-section:nth-of-type(2) a {
-    display: flex;
-    flex-direction: column-reverse;
+section:not(section:first-of-type) a {
     text-decoration: none;
-    background-color: lightpink;
+}
 
+section:not(section:first-of-type) ul {
+    display: grid;
+    row-gap: .2em;
+}
+
+section:not(section:first-of-type) article {
+    display: grid;
+    grid-template-columns: 6em 1fr;
+    background-color: rgb(244, 244, 244);
+    font-size: .8em;
 }
 
 section:not(section:first-of-type) img {
     width: 5.68em;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
-section:nth-of-type(2) div {
-    display: flex;
-    flex-direction: column;
-    background-color: lightblue;
+section:not(section:first-of-type) a article  h3 {
+    align-self: center;
+    margin-left: 1em;  
+    font-weight: 400;
+    
 }
 
-section:nth-of-type(2) a h3 {
-  font-size: 1.2em;  
+section:not(section:first-of-type) a article h4 {
+    font-size: 1.2em;
+    margin-left: 1em;  
+    margin-right: 1em;
 }
-
-section:nth-of-type(2) a h4 {
-    font-size: 0.9em;
-    width: 20em;
-  }
   
+
+
+
+/***********************/
+/*   #ABONNEE WORDEN   */
+/***********************/
+section:last-of-type {
+    background-color: #a5dac9;
+    text-align: center;
+    max-height: 15em;
+}
+
+section:last-of-type h2:last-of-type {
+    background-color: #a5dac9;
+    font-size: 2.8em;
+    font-weight: 800;
+    padding: .2em 0;
+}
+
+section:last-of-type p {
+    font-size: 1em;
+    font-family: outfit;
+}
+
+section:last-of-type button {
+    border: none;
+    padding: 1em 5em;
+    margin: 1em 1em;
+}
