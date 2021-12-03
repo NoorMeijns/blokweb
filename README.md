@@ -107,9 +107,12 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-<img src="images/website.png" width="375px" alt="Homepagina van de website &C">
-<img src="images/website 1.png" width="375px" alt="Homepagina van de website &C">
-
+<img src="images/website.png" height="375px" alt="Mijn website artikelen gedeelte">
+ Tijdens het maken van de website ging het navigatie menu erg goed en de plaatsing van de foto's in de carrousel. 
+ 
+<img src="images/website 1.png" height="375px" alt="Mijn website header">
+ Wat ik lastiger vind is hoe ik de carrousel moet maken, maar ik ben nu bezig om eerst de hele webpagina neer te zetten. Dan kan ik later kijken naar de carrousel. 
+ Voor de rest ging alles goed. 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
