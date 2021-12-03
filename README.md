@@ -114,10 +114,10 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Noor     | Cera         | Edward    | Xavier       |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Vragen of h1 onzichtbaar maken goed is  | Hoe maak je een scrollbar om tussen foto's te scrollen. | Hoe maak je een darkmode toglle?  | en dan ik dat    |
+| en dat ook nog | Vraag over een plaatje in haar website | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
 
