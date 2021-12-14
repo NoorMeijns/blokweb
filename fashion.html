@@ -11,7 +11,7 @@
 
     <title>Fashion & Branding</title>
 </head>
-<body>
+<body id="letterGrootte">
     <header>
         <a href="index.html">
         <img src="images/logo_andC_white.png" alt="Homepagina van &c"> 
@@ -62,6 +62,9 @@
                     </li>
                 </ul>
             </nav>
+            <button class="font-size">A+/A-</button>
+            <script src="js/script.js"></script>
+
         </section>
         <section> 
             <p>beeld Tom ten Seldam</p>
@@ -130,10 +133,10 @@
             <h5>Nieuwsbrief</h5>
             <p>Schrijf je hier in om elke week de leukste nieuwe artikelen in je mail te ontvangen:</p>   
             <form> 
-                <section>
-                    <input type="text" placeholder="Je e-mailadres" required>
-                    <button>Go</button>
-                </section>
+                <input type="text" placeholder="Je e-mailadres" required>
+                <button>Go</button>
+            </form>
+            <form>
                 <input type="checkbox" id="subscribeNews" name="subscribe" value="nieuwsbrief">
                 <label for="subscribeNews">Ja, ik ontvang graag updates van &C!</label> 
             </form>
