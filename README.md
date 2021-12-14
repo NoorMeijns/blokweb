@@ -149,28 +149,25 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Tekstgrootte
+Uit de test kwam dat mijn tekst op de artikelpagina niet groot genoeg is. Als je slechter zicht hebt is het heel klein.
+Daarom heb ik de font-size aangepast naar ... (met indien nodig een afbeelding)
+
+(met indien nodig een afbeelding)
+
+
+#### Nav grootte
+Uit de test bleek ook dat mijn navigatie balk klein was. De ruimte om te klikken is kleiner waardoor het lastiger wordt als je handicap hebt. (met indien nodig een afbeelding)
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Te dikgedrukt 
+Uit de test bleek ook dat als je bijvoorbeeld ADHD hebt dat de dikgedrukte titels in de caroussel lastiger te lezen zijn. Ze worden dan gezien als een zwart blok.
+(met indien nodig een afbeelding)
 
-
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Ik heb daarom de font-weight aangepast, zodat ze minder dik zijn. (met indien nodig een afbeelding)
 
 </details>
 
@@ -190,11 +187,11 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Noor      | Cera          | Edward    | Xavier       |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Bij de nieuwsbrief section krijg ik paar elementen niet onderelkaar   |             | en ik dit    | Wilde kijken hoe hij zijn html kan verbeteren |
+| Kijken of mijn html wel klopt  | dit als er tijd is | nog een punt | dit wil ik zeker |
+|            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
