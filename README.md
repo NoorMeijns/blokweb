@@ -152,6 +152,7 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 #### Tekstgrootte
 Uit de test kwam dat mijn tekst op de artikelpagina niet groot genoeg is. Als je slechter zicht hebt is het heel klein.
 Daarom heb ik de font-size aangepast naar ...
+ 
 <img src="images/tekst_before.png" height="375px" alt="Tekst van mijn website">
 
 <img src="images/tekst_erna.png" height="375px" alt="Tekst van mijn website">
@@ -159,10 +160,10 @@ Daarom heb ik de font-size aangepast naar ...
 
 #### Nav grootte
 Uit de test bleek ook dat mijn navigatie balk klein was. De ruimte om te klikken is kleiner waardoor het lastiger wordt als je handicap hebt. 
-<img src="images/nav_before.png" height="375px" alt="Navigatiebalk voor aanpassing">
+<img src="images/nav_before.png" alt="Navigatiebalk voor aanpassing">
 Ik heb in mijn code de hoogte van de a's met padding groter gemaakt waardoor de je nu meer klikbare ruimte boven en onder de tekst hebt.
  
-<img src="images/nav-erna.png" height="375px" alt="Navigatiebalk na aanpassing">
+<img src="images/nav-erna.png" alt="Navigatiebalk na aanpassing">
 
 
 #### Te dikgedrukt 
