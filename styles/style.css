@@ -2,12 +2,10 @@
 /*    #CSS REMEDY    */
 /*********************/
 *, *::after, *::before {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-
 
 
 
@@ -23,6 +21,8 @@
     --background-nieuwsbrief-color: #F9CEDC;
     --background-abonnee-color: #a5dac9;
     --text-en-header-color: black;
+    --h2-text-color: black;
+
     --shadow-color: grey;
     --background-kopjes:rgba(236,236,236);
     --color-linkjes: #A3A3A3;
@@ -30,11 +30,38 @@
     --color-hover-linkjes: #707070; 
     --color-link-footer: rgb(172, 172, 172);
     --artikel-background-color: #d5c6e0;
+
+
 }
 
 
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-color:  #cfcfcf;
+        --background-highlight-color: #d6a8b8;
+        --background-kopjes:rgb(70, 70, 70);
 
+        --text-en-header-color: black;
+        --shadow-color: rgb(77, 77, 77);
+        --h2-text-color: white;
+
+        --main-carrousel-color: #d6aebc;
+        --second-carrousel-color:#35a37f; 
+
+        --background-nieuwsbrief-color: #35a37f;
+        --color-linkjes: #000000;
+        --color-linkjes-artikelpagina:#35a37f;
+        --color-hover-linkjes: rgb(41, 41, 41);
+        
+        --artikel-background-color: #35a37f; 
+    }
+
+    h2 {
+        color: var(--h2-text-color);
+        font-weight: 500;
+    }
+}
 
 
 /*********************/
@@ -49,7 +76,9 @@ h2, h3, h4 {
     color: var(--text-en-header-color);
 }
 
-
+h2 {
+    color: var(--h2-text-color);
+}
 
 
 
@@ -57,8 +86,7 @@ h2, h3, h4 {
 /*    #NAVIGATIE     */
 /*********************/
 header {
-    background-color: var(--text-en-header-color);
-    flex-wrap:wrap;
+    background-color: black;
 }
 
 header h1 {
@@ -72,32 +100,49 @@ header img {
 
 nav ul {
     display: flex;
-    gap: 1.5em;
-    overflow-x: auto;
     background-color:var(--background-highlight-color);
 
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
     overscroll-behavior:none;
-    padding: 1em 2em 1.5em;
+    
+    gap: 1.5em;
+    padding: 0 2em;
 }
 
 nav ul li {
     display:flex;
     flex-direction: column-reverse;
     flex-shrink: 0;
+
     scroll-snap-align: center;
     overscroll-behavior: contain;
-
 }
 
 nav ul li a {
+    position:relative;
     text-decoration: none;
-    color: var(--text-en-header-color);
+
     font-family: outfit;
+    font-size: 1em; 
     font-weight: 400;
-    font-size: 0.8em; 
+    color: var(--text-en-header-color);
+    padding: 1.2em 0 1.2em;
 }
 
+nav ul li a:hover::after {
+    position:absolute;
+    content: "";
+    background-color: black;
+    height:2px;
+
+    transform:scaleX(1);
+    transform-origin:left center;
+
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
 
 
 
@@ -117,45 +162,66 @@ section > a {
     text-decoration: none;
 }
 
-section:first-of-type {
+section:first-of-type {    
+    display: grid;
+    align-items: flex-start;
+    justify-items: center;
+
+    grid-template-rows: 27.5em 3em;
+    grid-template-columns: 1fr 5em 5em 5em 1fr;
+}
+
+section:first-of-type section {
+    /* Bron: https://codepen.io/onion2k/pen/xxZYBVj */
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+   
+    width: 100%;
+    height: 100%;
+
     display: flex;
-    height: 28em;
-    overflow-x: auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     
+    transform-style: preserve-3d;
+    perspective: 800px;
+    
+    --items: 3;
+    --middle: 2;
+    --position: 1;
+    pointer-events: none;
 }
 
 section:first-of-type a {
     display: flex;
     flex-direction: column;    
-    position: relative;
-    box-shadow: 2px 2px 15px var(--shadow-color);
-    flex-basis: 13em;
-    flex-shrink: 0;
     
+    box-shadow: 2px 2px 15px var(--shadow-color);
+
+    /* Bron: https://codepen.io/onion2k/pen/xxZYBVj */
+    position: absolute;
+    max-width: 13.75em;
+    height: 100%;
+    
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r)))
+      translateX(calc(-250px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+    
+    pointer-events: auto;
 }
 
 section:first-of-type a:nth-of-type(1) {
-    z-index: 1;
-    left: calc(50% - 6.875em);
-    top: 2.5em;
     background-color: var(--main-carrousel-color);
 }
 
-
-section:first-of-type a:nth-of-type(2) {
+section:first-of-type a:nth-of-type(2), section:first-of-type a:nth-of-type(3) {
     background-color:var(--second-carrousel-color);
-    min-width: 11.625em;
-    max-height: 11.625em;
-    left: -70%;
-    top: 4em;
-}
-
-section:first-of-type a:nth-of-type(3) {
-    background-color:var(--second-carrousel-color);
-    min-width: 11.625em;
-    max-height: 11.625em;
-    left: -60%;
-    top: 4em;
 }
 
 section:first-of-type a:nth-of-type(1) h2 {
@@ -163,20 +229,60 @@ section:first-of-type a:nth-of-type(1) h2 {
     font-weight: 500;
 }
 
-
-/* Kijk hier nog eens naar! */
-section:first-of-type a h2 {
-    background-color: inherit;
+/* Bron: https://codepen.io/onion2k/pen/xxZYBVj */
+a:nth-of-type(1) {
+    --offset: 2;
 }
 
+a:nth-of-type(2) {
+    --offset: 1;
+}
 
+a:nth-of-type(3) {
+    --offset: 3;
+}
+
+input:nth-of-type(1) {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+input:nth-of-type(1):checked ~ section {
+    --position: 1;
+}
+  
+input:nth-of-type(2) {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+input:nth-of-type(2):checked ~ section {
+    --position: 2;
+}
+  
+input:nth-of-type(3) {
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+input:nth-of-type(3):checked ~ section {
+    --position: 3;
+}
+  
+input[type="radio"] {
+    cursor: pointer;
+    width: 1.25em;
+    height: 1.25em;
+}
 
 
 section:first-of-type a h2, section:first-of-type a h3 {
     display: flex;
+    flex-direction: column;
+
     color: var(--text-en-header-color);
     text-align: center;
-    flex-direction: column;
+
     margin: 0;
 }
 
@@ -188,28 +294,30 @@ section:first-of-type h2 {
 section:first-of-type h3 {
     font-size: 1em;
     padding: 0.5em;
+    font-weight: 400;
 }
 
 section:first-of-type time {
     position: absolute;
-    color: var(--main-color);
-    background-color: var(--text-en-header-color);
-    font-weight: 500;
+    font-family: Outfit;
     font-size: .9em;
+    font-weight: 500;
+    color: var(--main-color);
+    text-transform: lowercase;
+
+    background-color: var(--text-en-header-color);
+    
     padding: .5em 1.2em;
     top: .8em;
     right: 0; 
-    font-family: Outfit;
-    text-transform: lowercase;
 }
 
 section:first-of-type img {
+    order: -1;
     max-width: 100%;
     width: 13.75em;
     height: 13.75em;
-    order: -1;
 }
-
 
 
 
@@ -220,9 +328,10 @@ section:first-of-type img {
 /* selecteert alle h2's in een section behalve degene uit de eerste section  */
 h2:not(section:first-of-type h2) {
     background-color: var(--background-kopjes);
+    font-size: 1.75em;
+
     margin: .125em 0;
     padding: .5em;
-    font-size: 1.75em;
 }
 
 section:not(section:first-of-type) a {
@@ -237,26 +346,29 @@ section:not(section:first-of-type) ul {
 section:not(section:first-of-type) article {
     display: grid;
     grid-template-columns: 6em 1fr;
+
     background-color: var(--background-highlight-color);
     font-size: .8em;
 }
 
 section:not(section:first-of-type) img {
     width: 5.68em;
+
     grid-column-start: 1;
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
 section:not(section:first-of-type) a article  h3 {
+    font-weight: 400;
+
     align-self: center;
     margin-left: 1em;  
-    font-weight: 400;
-    
 }
 
 section:not(section:first-of-type) a article h4 {
     font-size: 1.2em;
+
     margin-left: 1em;  
     margin-right: 1em;
 }
@@ -272,6 +384,7 @@ section:not(section:first-of-type) a article h4 {
 section:nth-of-type(3) {
     background-color: var(--background-nieuwsbrief-color);
     text-align: center;
+
     margin-top: 5em ;
 }
 
@@ -280,44 +393,59 @@ section:nth-of-type(3) h2:last-of-type {
     font-size: 2.25em;
     font-weight: 700;
     line-height: 1em;
+
     margin: 0;
 }
 
 section:nth-of-type(3) h3 {
     font-family: Outfit;
     font-size: 1em;
+
     margin: 0 .5em;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+section:nth-of-type(3) form {
+    display:flex;
+    justify-content: center;
+    flex-wrap:nowrap;
+
     font-family: outfit;
-    padding: 1em;
+    padding: 1em .5em;
 }
 
 
-section form input[type=text] {
-    width: 20em;  
-    padding: .5em 1em;
+section:nth-of-type(3) form:first-of-type input[type=text] {
+    width: 30em;  
     border: none;  
+
+    padding: .825em 1em;
 }
 
 
-section form button {
-    border: none;
-    padding: .5em 1.2em;
+section:nth-of-type(3) form:first-of-type button {
     text-transform: uppercase;
-    font-weight: 600;
+    font-size: 1em;
+    font-weight: 400;
+    border: none;
+
     width: 5em;
+    padding: .6em 1em;
+
 }
 
-label {
-    font-size: .8em;
+section:nth-of-type(3) form:nth-of-type(2) {
+    padding: .5em 0 2em;
+}
+
+section:nth-of-type(3) form:nth-of-type(2) label {
+    font-size: .9em;
     font-weight: 500;
 }
 
+section:nth-of-type(3) form:nth-of-type(2) input[type=checkbox] {
+    cursor: pointer;
 
+}
 
 
 
@@ -325,18 +453,17 @@ label {
 /*   #MEER LEZEN LINKJES   */
 /***************************/
 
-main section:not(section:first-of-type) > a {
-    position:relative;
+main section:not(section:first-of-type) > a{
+    position: relative;
     font-family: outfit;
-    background-color: var(--main-color);
-    color: var(--color-linkjes);
     text-decoration:none;
-    outline:none;
-    right: calc(-100% + 10em);
-    top: -.2em;
-    /* Voor een beetje ruimte tussen de lijn bij het hoveren en de tekst */
-    padding-bottom: .2em;
+    color: var(--color-linkjes);
 
+    background-color: var(--main-color);
+    top: .5em;
+    right: calc(-100% + 10em);
+    /* Voor een beetje ruimte tussen de lijn bij het hoveren en de tekst */
+    padding-bottom: .5em;
 }
 
 main section:not(section:first-of-type) > a:hover {
@@ -351,20 +478,21 @@ main section:not(section:first-of-type) > a:hover::after {
   
 main section:not(section:first-of-type) > a::after {
     content:"";
-    background-color:currentcolor;
     position:absolute;
+
+    background-color:currentcolor;
+    height:2px;
+
     left: 0;
     right: 0;
     bottom: 0;
-    height:2px;
+
     transform:scaleX(0);
     transform-origin: right center;
     transition:transform .5s;
 }
 
-main section:not(section:first-of-type) > a:focus {
-    outline: auto;
-}
+
 
 
 
@@ -374,10 +502,17 @@ main section:not(section:first-of-type) > a:focus {
 /*      #FOOTER       */
 /**********************/
 footer {
-    background-color: black;
+    font-family: outfit;
     color: white;
     text-align: center;
-    font-family: outfit;
+
+    background-color: black;
+    margin-top: 5em;
+}
+
+footer section:first-of-type {
+    display:block;
+    height: auto;
 }
 
 footer img {
@@ -390,16 +525,60 @@ footer h5 {
     padding: 1em 0 .75em;
 }
 
+footer section p {
+    font-size: .75em;
+    padding: 0 1.5em 2em;
+}
+
 footer ul li {
     color: var(--color-link-footer);
     padding-bottom: .75em;
 }
 
-footer form {
-    display: block;
+footer section form {
+    display:flex;
+    justify-content: center;
+    gap: .5em;
+
     font-family: outfit;
-    
+
+    padding: 0 2em;
 }
+
+
+
+footer section form:first-of-type input[type=text] {
+    width: 30em;
+    border: none;  
+  
+    padding: .8em 1em;
+}
+
+
+footer section form:first-of-type button {
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: none;
+
+    padding: .6em 1em;
+    width: 5em; 
+}
+
+footer section form:nth-of-type(2) {
+    padding: 1.5em 0 2.5em;
+}
+
+footer section form:nth-of-type(2) label {
+    font-size: .9em;
+    font-weight: 500;
+}
+
+footer section form:nth-of-type(2) input[type=checkbox] {
+    cursor: pointer;
+}
+
+
 
 
 
@@ -408,9 +587,10 @@ footer form {
 /********************************/
 footer ul:nth-of-type(2) {
     display: flex;
+    justify-content: center;
+
     list-style-type: none;
     gap: 1em;
-    justify-content: center;
 }
 
 footer ul:nth-of-type(2) li {
@@ -437,22 +617,25 @@ footer ul:nth-of-type(2) li:last-of-type a img{
     font-family: outfit;
 }
 
-.tweedepagina section {
-    max-width: 50em;
-}
+
 
 .tweedepagina section:first-of-type {
     display: block;
     background-color:  var(--artikel-background-color);
     text-align: center;
+
     /* Om de website weer op default te zetten aangezien ik overflow heb gebruikt voor mijn homepagina. */
     overflow: hidden;
+    margin: 0;
     height: 100%;
+    max-width: 50em;
+
 }
 
 
 .tweedepagina section nav ul li a {
     position: static;
+
     /* Default voor linkjes vanwege de opmaak op de homepagina */
     box-shadow: none;
     margin: 0;
@@ -471,70 +654,91 @@ footer ul:nth-of-type(2) li:last-of-type a img{
 
 
 .tweedepagina section h1 {
-    font-weight: 500;
     font-size: .8em;
+    font-weight: 500;
+    
     margin-top: 2em;
     margin-bottom: 1em;
 }
 
 .tweedepagina section h2 {
     font-family: 'Times New Roman', Times, serif ;
-    font-weight: 900;
     font-size: 1.8em;
+    font-weight: 900;
+   
     padding: 0;
     margin: 0 .5em 1em;
 }
 
 .tweedepagina section h3 {
-    padding: 2em 1.5em 1em;
     line-height: 1.75em;
+
+    padding: 2em 1.5em 1em;
 }
  
 .tweedepagina section:first-of-type nav ul {
-    background-color: var(--artikel-background-color);
-    padding: 0;
+    /* Default settings voor de tweede pagina */
     justify-content: center;
+    padding: 0;
+
+    background-color: var(--artikel-background-color);
     gap: .5em;
-    padding-bottom: 1.5em;
+    margin: .5em 0 2.5em;
 
 }
 
 .tweedepagina section:first-of-type nav ul li a {
+    flex-basis: 0;
+
     background-color: var(--artikel-background-color);
     padding: 0;
-    flex-basis: 0;
-    
 }
 
 .tweedepagina section a img {
     width: 1.75em;
 }
 
+.tweedepagina section button {
+    font-family: outfit;
+    border: none;
+    background-color: var(--main-color);
+    
+    padding: .5em 2em;
+    margin-bottom: 2em;
+}
+
 .tweedepagina section:nth-of-type(2) {
-    margin: 0 2em;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2em 0;
 
+    font-size: 1em;
     color: var(--color-linkjes);
-    font-size: .8em;
     border-bottom: solid 1px var(--color-linkjes);
+
+    padding: 2em 1em;
+    max-width: 62.5em;
 }
 
 
 .tweedepagina article {
-    padding: 2em;
     text-align: left;
     background-color: var(--main-color);
     max-width: 50em;
 
+    padding: 2em;
+
 }
 
 .tweedepagina article h5 {
-    padding: 1.5em 0 0 ;
-    font-size: 1em;
+    font-size: 1.4em;
     font-weight: 600;
+
+    padding: 1.5em 0 0 ;
+}
+
+.tweedepagina article p {
+    font-size: 1.2em;
 }
 
 .tweedepagina article a {
