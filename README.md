@@ -151,7 +151,7 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 
 #### Tekstgrootte
 Uit de test kwam dat mijn tekst op de artikelpagina niet groot genoeg is. Als je slechter zicht hebt is het heel klein.
-Daarom heb ik de font-size aangepast naar ...
+Daarom heb ik de font-size aangepast naar 1.2em.
  
 <img src="images/tekst_before.png" height="375px" alt="Tekst van mijn website">
 
@@ -160,6 +160,7 @@ Daarom heb ik de font-size aangepast naar ...
 
 #### Nav grootte
 Uit de test bleek ook dat mijn navigatie balk klein was. De ruimte om te klikken is kleiner waardoor het lastiger wordt als je handicap hebt. 
+ 
 <img src="images/nav_before.png" alt="Navigatiebalk voor aanpassing">
 Ik heb in mijn code de hoogte van de a's met padding groter gemaakt waardoor de je nu meer klikbare ruimte boven en onder de tekst hebt.
  
@@ -168,9 +169,11 @@ Ik heb in mijn code de hoogte van de a's met padding groter gemaakt waardoor de 
 
 #### Te dikgedrukt 
 Uit de test bleek ook dat als je bijvoorbeeld ADHD hebt dat de dikgedrukte titels in de caroussel lastiger te lezen zijn. Ze worden dan gezien als een zwart blok.
+ 
 <img src="images/car_before.png" height="375px" alt="Dikgedrukte tekst">
 
-Ik heb daarom de font-weight aangepast, zodat ze minder dik zijn. (met indien nodig een afbeelding)
+Ik heb daarom de font-weight aangepast, zodat ze minder dik zijn.
+ 
 <img src="images/car_erna.png" height="375px" alt="Tekst na de aanpassing">
 
 </details>
@@ -193,18 +196,17 @@ samen met je groepje opstellen
 
 | Noor      | Cera          | Edward    | Xavier       |
 | ---            | ---                | ---          | ---              |
-| Bij de nieuwsbrief section krijg ik paar elementen niet onderelkaar   |             | en ik dit    | Wilde kijken hoe hij zijn html kan verbeteren |
-| Kijken of mijn html wel klopt  | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Bij de nieuwsbrief section krijg ik paar elementen niet onderelkaar   | Bepaalde linkjes staan niet goed            | -    | Wilde kijken hoe hij zijn html kan verbeteren |
+| Kijken of mijn html wel klopt  | Ook graag checken of html klopt | nog een punt | dit wil ik zeker |
 |            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
+- Uit de meeting kregen we goede tips over onze html en dat we het kunnen checken met de validator
+- Ik heb mijn nieuwsbrief section aan kunnen passen zodat het nu wel werkt.
 - nog een punt
-- ...
 
 </details>
 
@@ -218,7 +220,14 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+De navigatie en de lijsten gingen goed, maar de caroussel was wel echt lastig. Ook wist ik niet zo goed hoe ik de plaatjes, titels in de lijsten goed kon plaatsen.
+Maar nadat ik werd geholpen daarmee snapte ik het. Ik heb dat uiteindelijk met display:grid; gedaan. 
+<img src="images/car_erna.png" height="375px" alt="Tekst na de aanpassing">
+
+Voor de caroussel heb ik op internet gezocht naar goede bronnen over hoe je dat kon doen. Uiteindelijk heb ik er een gevonden die goed was en die ik een beetje snapte. 
+
+<img src="images/car_erna.png" height="375px" alt="Tekst na de aanpassing">
+
 
 ### Screenshot(s)
 
