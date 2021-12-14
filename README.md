@@ -222,11 +222,11 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Stand van zaken
 De navigatie en de lijsten gingen goed, maar de caroussel was wel echt lastig. Ook wist ik niet zo goed hoe ik de plaatjes, titels in de lijsten goed kon plaatsen.
 Maar nadat ik werd geholpen daarmee snapte ik het. Ik heb dat uiteindelijk met display:grid; gedaan. 
-<img src="images/car_erna.png" height="375px" alt="Tekst na de aanpassing">
+<img src="images/lijst.png" alt="Foto van artikelenlijst">
 
 Voor de caroussel heb ik op internet gezocht naar goede bronnen over hoe je dat kon doen. Uiteindelijk heb ik er een gevonden die goed was en die ik een beetje snapte. 
 
-<img src="images/car_erna.png" height="375px" alt="Tekst na de aanpassing">
+<img src="images/carroussel.png"  alt="Foto van carroussel">
 
 
 ### Screenshot(s)
@@ -246,8 +246,10 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. Bron carrousel: https://codepen.io/onion2k/pen/xxZYBVj
+2. Bron voor flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+3. Bron voor display: grid: https://css-tricks.com/snippets/css/complete-guide-grid/
+4. Bron navigatie: eigen werk opdracht van internetstandaarden
+
 
 </details>
