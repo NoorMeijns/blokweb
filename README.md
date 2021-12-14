@@ -230,8 +230,14 @@ Voor de caroussel heb ik op internet gezocht naar goede bronnen over hoe je dat 
 
 
 ### Screenshot(s)
+Dark-mode:
+<img src="images/onepage-&c.png"  alt="Foto van mijn onepage in darkmode">
 
-hier screenshot(s) van je eindresultaat
+ 
+light-mode:
+<img src="images/onepage-white.png"  alt="Foto van mijn onepage in lightmode">
+ 
+ 
 
 </details>
 
