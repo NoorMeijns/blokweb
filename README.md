@@ -151,23 +151,26 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 
 #### Tekstgrootte
 Uit de test kwam dat mijn tekst op de artikelpagina niet groot genoeg is. Als je slechter zicht hebt is het heel klein.
-Daarom heb ik de font-size aangepast naar ... (met indien nodig een afbeelding)
+Daarom heb ik de font-size aangepast naar ...
+<img src="images/tekst_before.jpg" height="375px" alt="Tekst van mijn website">
 
-(met indien nodig een afbeelding)
+<img src="images/tekst_erna.jpg" height="375px" alt="Tekst van mijn website">
 
 
 #### Nav grootte
-Uit de test bleek ook dat mijn navigatie balk klein was. De ruimte om te klikken is kleiner waardoor het lastiger wordt als je handicap hebt. (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
+Uit de test bleek ook dat mijn navigatie balk klein was. De ruimte om te klikken is kleiner waardoor het lastiger wordt als je handicap hebt. 
+<img src="images/nav_before.jpg" height="375px" alt="Navigatiebalk voor aanpassing">
+Ik heb in mijn code de hoogte van de a's met padding groter gemaakt waardoor de je nu meer klikbare ruimte boven en onder de tekst hebt.
+ 
+<img src="images/nav-erna.jpg" height="375px" alt="Navigatiebalk na aanpassing">
 
 
 #### Te dikgedrukt 
 Uit de test bleek ook dat als je bijvoorbeeld ADHD hebt dat de dikgedrukte titels in de caroussel lastiger te lezen zijn. Ze worden dan gezien als een zwart blok.
-(met indien nodig een afbeelding)
+<img src="images/car_before.jpg" height="375px" alt="Dikgedrukte tekst">
 
 Ik heb daarom de font-weight aangepast, zodat ze minder dik zijn. (met indien nodig een afbeelding)
+<img src="images/car_erna.jpg" height="375px" alt="Tekst na de aanpassing">
 
 </details>
 
